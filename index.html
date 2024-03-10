@@ -19,10 +19,41 @@
         }
     </style>
     <link rel="stylesheet" href="main.css">
+    <!-- google mullish font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
+    <!-- cdn link for tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+      fontFamily:{
+        mullish:["Mulish","san-serif"],
+      },
+      colors:{
+        deepBlue:"#02042a",
+        lightBlue:"#2b84ea",
+        lightBlue300:"#4b94ed",
+        lightBlue500:"#0b72e7",
+        greenLight:"#61cea6",
+        grayText:"#818597",
+        deepBlueHead:"#162f56",
+        gray2:"#525a76",
+      }
+    },
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
 </head>
 
 <body>
